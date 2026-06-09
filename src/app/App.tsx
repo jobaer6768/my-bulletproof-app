@@ -1,7 +1,12 @@
-import { Welcome } from "@/features/welcome";
+import { UserLists } from "@/features/users/components";
 
 function App() {
-  return <Welcome />;
+  return (
+    <div style={{ maxWidth: "800px", margin: "0 auto", padding: "2rem" }}>
+      <h1>Bulletproof React Demo</h1>
+      <UserLists />
+    </div>
+  );
 }
 
 export default App;
