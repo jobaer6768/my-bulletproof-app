@@ -6,5 +6,9 @@ interface ButtonProps {
 }
 
 export const Button = ({ children, onClick }: ButtonProps) => {
-  return <button onClick={onClick}>{children}</button>;
+  return (
+    <button style={{ cursor: "pointer" }} onClick={onClick}>
+      {children}
+    </button>
+  );
 };
